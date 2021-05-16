@@ -1,6 +1,5 @@
 /*estilos generales*/
 body{
-    background-color:cornsilk;
     padding: 0%;
     margin: 0%;
 }
@@ -10,7 +9,7 @@ body{
     width: 100%;
     padding: 9rem 3rem;
     text-align: center;
-    background: url("../img/fondo.jpg");
+    background: url("../img/programacion1.jpg");
     background-color: rgba(0,0,0,.3);
     background-blend-mode: soft-light;
     background-size: cover;
@@ -23,7 +22,7 @@ body{
 }
 .logo-container .logo h1{
     width: 100%;
-    color: #f1f1f1;    
+    color:white;  
     margin: 0%;
     padding: 0.5%;
     font-size: 40px;
@@ -31,6 +30,7 @@ body{
 }
 /*estilos del menu de navegacion*/
 .nav-container{
+    position: absolute;
     width: 100%;
     height: 60px;
     background: #3d3d3d;
@@ -41,6 +41,7 @@ body{
     box-sizing: border-box;
     position: sticky;
     top: 0px;
+    bottom: -500px;
 }
 .nav-container a{
     text-decoration: none;
@@ -56,6 +57,17 @@ body{
 .main .portafolio{
     text-align: center;
     font-size: 50px;
+    background: url("../img/programacion2.jpg");
+    background-color: rgba(0,0,0,.3);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    color: white;
+}
+.main .portafolio div{
+    background-color: grey;
+    color: white;
 }
 .main .portafolio a{
     text-decoration: none;
@@ -64,14 +76,199 @@ body{
     padding: 2%;
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    align-items: center;
+    position: static;
 }
-
+/*Habilidades*/
+.habilidades{
+    text-align: center;
+    background: url("../img/programacion1.jpg");
+    background-color: rgba(0,0,0,.3);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.table-image{
+    text-align: center;
+    background: url("../img/programacion12.jpg");
+    background-color: rgba(0,0,0,.3);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    width: 50%;
+    margin:0 25% 0 25%;
+    color: white;
+}
+.table-image tr td {
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    
+}
+.main .habilidades h3{
+    text-align: center;
+    font-size: 50px;
+}
+.table-image tr img{
+    width: 100px;
+    height: 100px;
+    position:relative;
+    margin: 10%;
+    border-radius: 10px;   
+}
+/*Contacto*/
 .main .contacto{
     text-align: center;
     font-size: 50px;
+    width: 100%;
 }
-.main .proyectos h3{
+.contacto .table-contacto h3{
     text-align: center;
     font-size: 50px;
+}
+.contacto .table-contacto{
+    width: 50%;
+    margin:0 25% 0 25%;
+    background-color: cornflowerblue;
+}
+.contacto .table-contacto tr th{
+    text-align: center;
+}
+.contacto .table-contacto tr td{
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding:1%;
+    text-align: right;
+}
+.contacto .table-contacto tr td input{
+    border: 1px solid black;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+/*xd*/
+
+.main .ejeZfooter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 12, 12);
+}
+.main .footer-content{
+    padding-top: 100px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.main .footer-content .footer-title{
+    width: 50%;
+    margin: auto;
+    border:2px solid #fff;
+    padding:15px;
+}
+.main .footer-content .footer-title h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.main .footer-content .footer-title hr{
+    background: #fff;
+    height: 2px;
+    width: 80%;
+    margin:auto;
+}
+.main .formulario-content{
+    width: 60%;
+    margin: 50px auto;
+    background: #fff;
+    padding:30px;
+    border-radius: 50px;
+    border: 1.5px solid var(--red);
+}
+.main .formulario-content #formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main .formulario-content #formulario label{
+    font-size: 20px;
+    text-align: center;
+    color: var(--black);
+    margin: 30px 0px 10px 0px;
+}
+.main .formulario-content #formulario input{
+    width: 90%;
+    height: 40px;
+    margin:auto;
+    border-radius: 24px;
+    outline: none;
+    border:1.5px solid red;
+    text-align: center;
+    font-size: 18px;
+    color: black
+}
+.main .formulario-content #formulario textarea{
+    width: 90%;
+    height: 200px;
+    margin:auto;
+    padding: 20px;
+    border-radius: 24px;
+    outline: none;
+    border:1.5px solid red;
+    font-size: 15px;
+    color: var(--black);
+}
+.main .formulario-content #formulario .send{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.main .formulario-content #formulario #input{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: red;
+    border:red;
+    outline: none;
+    border-radius: 20px;
+    color:black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.main .formulario-content #formulario #input:hover{
+    background: var(--blue);
+}
+.main .formulario-content #formulario .mensaje-form{
+    width: 100%;
+    margin:auto;
+    padding:20px;
+}
+.main .formulario-content #formulario .mensaje-form p{
+    font-size:19px;
+    color: var(--black);
+    line-height: 35px;
+    text-align: center;
+}
+.main .footer-text{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background:rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #fff;
+}
+.main .footer-text p{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
 }
